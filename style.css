@@ -1,0 +1,98 @@
+.navbar{
+	background-color: rgb(0, 0, 139);
+	color: white;
+	font-family: tahoma;
+}
+.logo{
+	margin-left: 35px;
+	width: 180px;
+	/*height: 0px;*/
+}
+
+
+#welcome-message {
+	/* font-weight: bold; */
+	color: rgb(245, 240, 240);
+}
+.submitdetails{
+	padding-left: 20px;
+	font-size: smaller;
+	color: black;
+}
+
+.firstbackground{
+	background-image: url(img/startpage_3_1600.baec4b08.webp);
+	/* padding: 0; */
+}
+.textcontent{
+	font-weight: bolder;
+}
+.supportbtn{
+	background-color: rgb(0, 0, 139);
+	border: none;
+}
+.supportbtn:hover {
+	background-color: rgb(0, 0, 390);
+	border-radius: 5px;
+}
+.bookingbtn{
+	background-color: rgb(0, 0, 139);
+	border-color: white;
+	height: 50px;
+}
+.bookingbtn:hover {
+	background-color: white;
+	color: rgb(0, 0, 139);
+}
+.bookingbtn svg:hover {
+	background-color: white;
+	color: rgb(0, 0, 139);
+}
+.book:hover {
+	color: rgb(0, 0, 139);
+}
+ strong{
+	color: blueviolet;
+	padding-right: 15px;
+ }
+
+.logobtn{
+	background-color: rgb(0, 0, 139);
+	border: none;
+}
+.flightcard{
+	/*display: flex;*/
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+}
+.wordheader{
+	font-size: large;
+	font-weight: bold;
+	/* color:rgb(0, 0, 139); */
+}
+.somelink{
+	background-color: rgb(0, 0, 139);
+}
+.sigble{
+	background-color: rgb(0, 0, 139);
+}
+.sigble2{
+	background-color: rgb(209, 209, 226);
+}
+.sigble3{
+	background-color: rgb(222, 222, 231);
+}
+.sigble4{
+	background-color: rgb(240, 240, 245);
+}
+.prolog{
+	margin-left: 50px;
+	align-items: center;
+	justify-content: center;
+}
+/* @media (max-width: 991px){
+	*{
+		font-size: large;
+	}
+} */

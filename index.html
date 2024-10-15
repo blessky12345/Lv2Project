@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flight Network</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="bootstrap-grid.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container-fluid py-1">
+
+			<button class="navbar-brand logobtn">
+				<a class="navbar-brand text-white" href="#">
+				</a>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 62"
+					class="etiBrandLogo flightnetwork css-gbggq3 logo">
+					<title id="brand-flightnetwork">Flight Network</title>
+					<path fill="#fff"
+						d="M105.22 28.6h-4.55v20.6H94V28.6h-3v-5.4h3v-1.32c0-3.19.9-5.52 2.72-7s4.55-2.19 8.22-2.12v5.54a4.87 4.87 0 0 0-3.34.8 4 4 0 0 0-.92 3.07v1.08h4.55zm10.85-14.13h-6.58v34.72h6.58zm6 4.53a3.7 3.7 0 0 1-.85-1.26 3.83 3.83 0 0 1 0-3 3.5 3.5 0 0 1 .85-1.26 4.31 4.31 0 0 1 5.76 0 3.9 3.9 0 0 1 .86 1.26 3.8 3.8 0 0 1 0 3 3.9 3.9 0 0 1-.86 1.26 4.33 4.33 0 0 1-5.76 0m6.13 30.17h-6.58v-26h6.58zM149 23.9a9.74 9.74 0 0 1 3.47 3v-3.71h6.62v26.19a14.1 14.1 0 0 1-1.45 6.44 10.83 10.83 0 0 1-4.37 4.5 14 14 0 0 1-7 1.67 15 15 0 0 1-9.08-2.58 9.54 9.54 0 0 1-4-7h6.49a4.83 4.83 0 0 0 2.21 2.84 7.9 7.9 0 0 0 4.13 1 6.7 6.7 0 0 0 2.5-.4 6.5 6.5 0 0 0 2.15-1.32 6.9 6.9 0 0 0 1.77-5.18v-4a10 10 0 0 1-3.5 3 10.5 10.5 0 0 1-5.05 1.23 11.14 11.14 0 0 1-6-1.69 11.8 11.8 0 0 1-4.3-4.76 15.4 15.4 0 0 1-1.57-7 15.2 15.2 0 0 1 1.57-7 11.6 11.6 0 0 1 4.3-4.7 11.4 11.4 0 0 1 6-1.64A11.15 11.15 0 0 1 149 23.9m2.53 8.17a6.67 6.67 0 0 0-2.53-2.63 6.9 6.9 0 0 0-3.43-.92 6.6 6.6 0 0 0-3.44.93 6.4 6.4 0 0 0-2.41 2.55 8.15 8.15 0 0 0-1 4.06 8.27 8.27 0 0 0 1 4.1 6.7 6.7 0 0 0 2.53 2.7 6.4 6.4 0 0 0 3.36.94 6.68 6.68 0 0 0 6-3.54 9.46 9.46 0 0 0 0-8.21m32-7.93a9.05 9.05 0 0 1 3.59 3.79 13.1 13.1 0 0 1 1.29 6v15.26h-6.59V34.83a6.7 6.7 0 0 0-1.55-4.76 5.57 5.57 0 0 0-4.22-1.67 5.66 5.66 0 0 0-4.3 1.67 6.6 6.6 0 0 0-1.57 4.76v14.34h-6.58v-34.7h6.58v12a8.65 8.65 0 0 1 3.38-2.66 11.45 11.45 0 0 1 4.69-1 10.76 10.76 0 0 1 5.26 1.3m17 4.49v12.56a2.4 2.4 0 0 0 .12 1 2.3 2.3 0 0 0 .51.89 3.2 3.2 0 0 0 2.14.58h3.05v5.52h-4.15q-8.31 0-8.31-8.07V28.59h-3.15v-5.4h3.11v-6.42h6.62v6.42h5.83v5.4zm41.78-2.84q2.86 2.94 2.86 8.19v15.22h-6.57V34.83a6.6 6.6 0 0 0-1.55-4.76 5.56 5.56 0 0 0-4.23-1.67 5.65 5.65 0 0 0-4.29 1.67 6.7 6.7 0 0 0-1.59 4.76v14.34h-6.6v-26h6.6v3.24a9.26 9.26 0 0 1 3.36-2.66 10.5 10.5 0 0 1 4.48-1 10 10 0 0 1 7.52 2.93m31.71 12.48h-19a6.56 6.56 0 0 0 2 4.44 6.16 6.16 0 0 0 4.28 1.59 5.36 5.36 0 0 0 5.21-3.19h7.09a11.75 11.75 0 0 1-4.32 6.17 12.7 12.7 0 0 1-7.86 2.4 13.65 13.65 0 0 1-6.79-1.57 12 12 0 0 1-4.68-4.77 14.6 14.6 0 0 1-1.66-7A14.84 14.84 0 0 1 250 29.1a11.5 11.5 0 0 1 4.6-4.7 14.86 14.86 0 0 1 13.45 0 11.3 11.3 0 0 1 4.56 4.53 13.65 13.65 0 0 1 1.62 6.74 14.3 14.3 0 0 1-.19 2.53zm-6.64-4.44a5.1 5.1 0 0 0-.43-2.23 5.3 5.3 0 0 0-1.37-1.83 6.55 6.55 0 0 0-4.37-1.52 6 6 0 0 0-4.1 1.48 6.5 6.5 0 0 0-2 4.1zm18.09-5.13v12.57a2.8 2.8 0 0 0 .12 1 2.55 2.55 0 0 0 .51.89 3.2 3.2 0 0 0 2.14.58h3v5.52h-4.13q-8.31 0-8.31-8.07V28.59h-3.1v-5.4h3.1v-6.42h6.62v6.42h5.82v5.4zm46.85-5.4-7.61 26h-7.08L312.93 31l-4.74 18.2h-7.14l-7.65-26h6.66l4.61 19.8 5-19.8h6.94l4.87 19.8 4.6-19.76zM339.13 48a12.06 12.06 0 0 1-4.73-4.72 14.13 14.13 0 0 1-1.72-7 14 14 0 0 1 1.78-7 12.2 12.2 0 0 1 4.82-4.72 14.82 14.82 0 0 1 13.62 0 12.33 12.33 0 0 1 4.81 4.72 13.84 13.84 0 0 1 1.77 7 13.54 13.54 0 0 1-1.8 7A12.6 12.6 0 0 1 352.8 48a14.2 14.2 0 0 1-6.91 1.66 13.73 13.73 0 0 1-6.76-1.66m10.11-5a6.34 6.34 0 0 0 2.52-2.61 8.84 8.84 0 0 0 .94-4.22 7.8 7.8 0 0 0-1.95-5.7 6.2 6.2 0 0 0-2.18-1.5 6.6 6.6 0 0 0-2.59-.5 6.5 6.5 0 0 0-2.57.5 6.1 6.1 0 0 0-2.15 1.5 8 8 0 0 0-1.9 5.7 8 8 0 0 0 1.86 5.7 6.07 6.07 0 0 0 4.67 2 6.9 6.9 0 0 0 3.35-.89m23.33-19a9.2 9.2 0 0 1 4.67-1.17v6.89h-1.73a6.7 6.7 0 0 0-4.68 1.46c-1 1-1.57 2.66-1.57 5.06v12.95h-6.57v-26h6.57v4a9.34 9.34 0 0 1 3.31-3.17m22.89 25.2-8.83-11.08v11.07h-6.58V14.47h6.58v19.75l8.73-11h8.55l-11.46 13 11.55 13zM31 0a31 31 0 1 0 21.9 9.07A31 31 0 0 0 31 0M18.88 44.1 9.41 29.86a8.09 8.09 0 0 1 11.2 2.26l.52.78 19.1-12.68a8.08 8.08 0 0 1 11.17 2.25z" />
+				</svg>
+			</button>
+			<button class="navbar-toggler " style="color: white; border-color: rgb(252, 249, 249);" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+			<div class="collapse text-white navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active text-white" aria-current="page" href="index.html">Flights</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active text-white" href="#">Hotels</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active text-white" href="#">Car Hire</a>
+					</li>
+				</ul>
+
+				<!-- < class="d-flex" role="search"> -->
+				<button class="supportbtn " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+						color="white" fill="currentColor" viewBox="0 0 256 256">
+						<path
+							d="M138,180a10,10,0,1,1-10-10A10,10,0,0,1,138,180ZM128,74c-21,0-38,15.25-38,34v4a6,6,0,0,0,12,0v-4c0-12.13,11.66-22,26-22s26,9.87,26,22-11.66,22-26,22a6,6,0,0,0-6,6v8a6,6,0,0,0,12,0v-2.42c18.11-2.58,32-16.66,32-33.58C166,89.25,149,74,128,74Zm102,54A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z" />
+					</svg> <a href="" class="text-white" style="text-decoration: none">Support</a></button>
+				<ul class="navbar-nav mx-1">
+					<li class="nav-item dropdown">
+						<a class="nav-link" style="text-decoration: none;" href="#" data-bs-toggle="dropdown"
+							aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								color="white" fill="currentColor" viewBox="0 0 256 256">
+								<path
+									d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z" />
+							</svg> <span class="text-white h6">My Account</span></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#" onclick="myAccount()"
+									style="color: rgb(0, 0, 139);">My Account</a></li>
+							<li><button class="dropdown-item" onclick="logout()" style="color: rgb(0, 0, 139);">Log
+									Out</button></li>
+						</ul>
+					</li>
+				</ul>
+				<button class="btn text-white" onclick="myBooking()">
+					My Bookings
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<section class="main mx-0" style="margin-top: 65px;">
+
+		 <section class="firstbackground pb-3">
+			<div class="container">
+				<div class="pt-2" align="center">
+					<h1 id="welcome-message"></h1>
+					<h2 class="text-white textcontent">The Best Airline Tickets And <br> Airfares For Cheap Flights</h2>
+				</div>
+				<form id="booking-form">
+					<div class=" col-md-12 px-4 mb-3 bg-white shadow rounded px-1  py-3 my-3 h6">
+						<div class="col-lg-5 themed-grid-col row py-3">
+							<div class="col-4 themed-grid-col" id="radios" for="radios" style="color:rgb(0, 0, 139);">
+								<div class="form-check">
+									<input name="radios" value="Return" type="radio" style="color:rgb(0, 0, 139);"
+										class="form-check-input" checked required>
+									<label class="form-check-label">Return</label>
+								</div>
+							</div>
+							<div class="col-4 themed-grid-col" style="color:rgb(0, 0, 139);">
+								<div class="form-check">
+									<input name="radios" value="One-Way" type="radio" class="form-check-input" required>
+									<label class="form-check-label">One-Way</label>
+								</div>
+							</div>
+							<div class="col-4 themed-grid-col" style="color:rgb(0, 0, 139);">
+								<div class="form-check">
+									<input name="radios" value="Multi-City" type="radio" class="form-check-input"
+										required>
+									<label class="form-check-label">Multi-City</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row py-3">
+							<div class="col-lg-9 themed-grid-col">
+								<div class="col-lg-12 themed-grid-col" id="no-return-date-group">
+									<div class="row">
+										<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139);">
+											<p>From :</p>
+											<div class="form-control mx-1">
+												<label class="form-check-label">
+													<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+														fill="currentColor" color="rgb(0, 0, 139)" viewBox="0 0 256 256"
+														data-testid="originIcon">
+														<path
+															d="M174,216a6,6,0,0,1-6,6H24a6,6,0,0,1,0-12H168A6,6,0,0,1,174,216ZM245.9,92.78a6,6,0,0,1-2.82,4l-147.41,88a38.22,38.22,0,0,1-19.23,5.23,37.8,37.8,0,0,1-25.92-10.33l-.1-.09L14.37,144.36a14,14,0,0,1,4-23l3-1.49a6,6,0,0,1,4.56-.29l29.15,9.83,23.17-14-23.7-23a14,14,0,0,1,4-23.18l.24-.1,7.15-2.71a6,6,0,0,1,4.19,0l54.84,20.18,52.38-31.27A37.81,37.81,0,0,1,226,64l.09.11L244.73,88A6,6,0,0,1,245.9,92.78ZM231.09,90,216.67,71.53a25.86,25.86,0,0,0-33.26-5.89L128.6,98.36a6,6,0,0,1-5.15.48L68,78.45l-4.9,1.85A1.91,1.91,0,0,0,62,81.77a2,2,0,0,0,.63,1.82l.17.15,29.35,28.49a6,6,0,0,1-1.07,9.44L58.89,141.16a6,6,0,0,1-5,.55l-29.45-9.94-.93.46-.28.13a2,2,0,0,0-.58,3.29l.1.09,36,35.28a25.84,25.84,0,0,0,30.81,3.47Z" />
+
+													</svg>
+												</label>
+												<input type="text" id="from" placeholder="From" class="form-control"
+													style="border: none; color:rgb(0, 0, 139);" required>
+
+											</div>
+										</div>
+										<div class="col-lg-2 themed-grid-col" align="center"
+											style="padding-bottom: -50px;">
+											<div><br><br>
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+													fill="currentColor" color="rgb(0, 0, 139)" viewBox="0 0 256 256">
+													<path
+														d="M212.24,171.76a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48-8.48L193.51,182H48a6,6,0,0,1,0-12H193.51l-21.75-21.76a6,6,0,0,1,8.48-8.48ZM75.76,116.24a6,6,0,0,0,8.48-8.48L62.49,86H208a6,6,0,0,0,0-12H62.49L84.24,52.24a6,6,0,0,0-8.48-8.48l-32,32a6,6,0,0,0,0,8.48Z" />
+												</svg>
+											</div>
+										</div>
+										<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139); ">
+											<p>To :</p>
+											<div class="form-control">
+												<label for=""><svg xmlns="http://www.w3.org/2000/svg" width="18"
+														height="18" fill="currentColor" color="rgb(0, 0, 139)"
+														viewBox="0 0 256 256" data-testid="destinationIcon">
+														<path
+															d="M246,216a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12H240A6,6,0,0,1,246,216Zm-23.62-26.22L45.75,140.32A38.14,38.14,0,0,1,18,103.72V48A14,14,0,0,1,36.43,34.71l5.47,1.83a6,6,0,0,1,3.74,3.65l11,30.33L90,80V48a14,14,0,0,1,18.43-13.29l5.47,1.83a6,6,0,0,1,3.63,3.37l22.88,54.53,61.77,17.27A38.09,38.09,0,0,1,230,148.32V184a6,6,0,0,1-7.62,5.78ZM218,148.32a26.07,26.07,0,0,0-19-25l-64.58-18a6,6,0,0,1-3.91-3.46l-23-54.7-2.89-1A2,2,0,0,0,102,48V88a6,6,0,0,1-7.64,5.77l-44-12.54a6,6,0,0,1-4-3.73L35.34,47l-2.71-.9A1.91,1.91,0,0,0,32,46a2,2,0,0,0-1.16.38A2,2,0,0,0,30,48v55.72a26.09,26.09,0,0,0,19,25l169,47.33Z">
+													</svg>
+												</label>
+												<input type="text" id="to" placeholder="To"
+													class="form-control text-primary"
+													style="color:rgb(0, 0, 139); border: none;" required>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div id="return-date-group" style="display: none;">
+
+									<div>
+										<p class="py-2" style="color:rgb(0, 0, 139);">Trip</p>
+										<div class="col-lg-12 themed-grid-col row">
+											<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139);">
+												<p>From :</p>
+												<div class="form-control  mx-1">
+													<label class="form-check-label">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+															fill="currentColor" color="rgb(0, 0, 139)"
+															viewBox="0 0 256 256" data-testid="originIcon">
+															<path
+																d="M174,216a6,6,0,0,1-6,6H24a6,6,0,0,1,0-12H168A6,6,0,0,1,174,216ZM245.9,92.78a6,6,0,0,1-2.82,4l-147.41,88a38.22,38.22,0,0,1-19.23,5.23,37.8,37.8,0,0,1-25.92-10.33l-.1-.09L14.37,144.36a14,14,0,0,1,4-23l3-1.49a6,6,0,0,1,4.56-.29l29.15,9.83,23.17-14-23.7-23a14,14,0,0,1,4-23.18l.24-.1,7.15-2.71a6,6,0,0,1,4.19,0l54.84,20.18,52.38-31.27A37.81,37.81,0,0,1,226,64l.09.11L244.73,88A6,6,0,0,1,245.9,92.78ZM231.09,90,216.67,71.53a25.86,25.86,0,0,0-33.26-5.89L128.6,98.36a6,6,0,0,1-5.15.48L68,78.45l-4.9,1.85A1.91,1.91,0,0,0,62,81.77a2,2,0,0,0,.63,1.82l.17.15,29.35,28.49a6,6,0,0,1-1.07,9.44L58.89,141.16a6,6,0,0,1-5,.55l-29.45-9.94-.93.46-.28.13a2,2,0,0,0-.58,3.29l.1.09,36,35.28a25.84,25.84,0,0,0,30.81,3.47Z" />
+
+														</svg>
+													</label>
+													<input type="text" id="return-input-from-one" placeholder="From"
+														class="form-control"
+														style="border: none; color:rgb(0, 0, 139);">
+
+												</div>
+											</div>
+											<div class="col-lg-2 themed-grid-col" align="center"
+												style="padding-bottom: -50px;">
+												<div><br><br>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														fill="currentColor" color="rgb(0, 0, 139)"
+														viewBox="0 0 256 256">
+														<path
+															d="M212.24,171.76a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48-8.48L193.51,182H48a6,6,0,0,1,0-12H193.51l-21.75-21.76a6,6,0,0,1,8.48-8.48ZM75.76,116.24a6,6,0,0,0,8.48-8.48L62.49,86H208a6,6,0,0,0,0-12H62.49L84.24,52.24a6,6,0,0,0-8.48-8.48l-32,32a6,6,0,0,0,0,8.48Z" />
+													</svg>
+												</div>
+											</div>
+											<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139); ">
+												<p>To :</p>
+												<div class="form-control">
+													<label for=""><svg xmlns="http://www.w3.org/2000/svg" width="18"
+															height="18" fill="currentColor" color="rgb(0, 0, 139)"
+															viewBox="0 0 256 256" data-testid="destinationIcon">
+															<path
+																d="M246,216a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12H240A6,6,0,0,1,246,216Zm-23.62-26.22L45.75,140.32A38.14,38.14,0,0,1,18,103.72V48A14,14,0,0,1,36.43,34.71l5.47,1.83a6,6,0,0,1,3.74,3.65l11,30.33L90,80V48a14,14,0,0,1,18.43-13.29l5.47,1.83a6,6,0,0,1,3.63,3.37l22.88,54.53,61.77,17.27A38.09,38.09,0,0,1,230,148.32V184a6,6,0,0,1-7.62,5.78ZM218,148.32a26.07,26.07,0,0,0-19-25l-64.58-18a6,6,0,0,1-3.91-3.46l-23-54.7-2.89-1A2,2,0,0,0,102,48V88a6,6,0,0,1-7.64,5.77l-44-12.54a6,6,0,0,1-4-3.73L35.34,47l-2.71-.9A1.91,1.91,0,0,0,32,46a2,2,0,0,0-1.16.38A2,2,0,0,0,30,48v55.72a26.09,26.09,0,0,0,19,25l169,47.33Z">
+														</svg>
+													</label>
+													<input type="text" id="return-input-to-one" placeholder="To"
+														class="form-control text-primary"
+														style="color:rgb(0, 0, 139); border: none;">
+												</div>
+											</div>
+
+											<div class="col-12 themed-grid-col px-3">
+												<p class="px-2 py-1" style="color:rgb(0, 0, 139);">Departure</p>
+												<input type="date" class="form-control py-2"
+													id="return-input-departure-one" placeholder=""
+													style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;">
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<p class="py-2" style="color:rgb(0, 0, 139);">Trip</p>
+										<div class="col-lg-12 themed-grid-col row">
+											<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139);">
+												<p>From :</p>
+												<div class="form-control  mx-1">
+													<label class="form-check-label">
+														<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+															fill="currentColor" color="rgb(0, 0, 139)"
+															viewBox="0 0 256 256" data-testid="originIcon">
+															<path
+																d="M174,216a6,6,0,0,1-6,6H24a6,6,0,0,1,0-12H168A6,6,0,0,1,174,216ZM245.9,92.78a6,6,0,0,1-2.82,4l-147.41,88a38.22,38.22,0,0,1-19.23,5.23,37.8,37.8,0,0,1-25.92-10.33l-.1-.09L14.37,144.36a14,14,0,0,1,4-23l3-1.49a6,6,0,0,1,4.56-.29l29.15,9.83,23.17-14-23.7-23a14,14,0,0,1,4-23.18l.24-.1,7.15-2.71a6,6,0,0,1,4.19,0l54.84,20.18,52.38-31.27A37.81,37.81,0,0,1,226,64l.09.11L244.73,88A6,6,0,0,1,245.9,92.78ZM231.09,90,216.67,71.53a25.86,25.86,0,0,0-33.26-5.89L128.6,98.36a6,6,0,0,1-5.15.48L68,78.45l-4.9,1.85A1.91,1.91,0,0,0,62,81.77a2,2,0,0,0,.63,1.82l.17.15,29.35,28.49a6,6,0,0,1-1.07,9.44L58.89,141.16a6,6,0,0,1-5,.55l-29.45-9.94-.93.46-.28.13a2,2,0,0,0-.58,3.29l.1.09,36,35.28a25.84,25.84,0,0,0,30.81,3.47Z" />
+
+														</svg>
+													</label>
+													<input type="text" id="return-input-from-two" placeholder="From"
+														class="form-control" style="border: none; color:rgb(0, 0, 139);"
+														>
+
+												</div>
+											</div>
+											<div class="col-lg-2 themed-grid-col" align="center"
+												style="padding-bottom: -50px;">
+												<div><br><br>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														fill="currentColor" color="rgb(0, 0, 139)"
+														viewBox="0 0 256 256">
+														<path
+															d="M212.24,171.76a6,6,0,0,1,0,8.48l-32,32a6,6,0,0,1-8.48-8.48L193.51,182H48a6,6,0,0,1,0-12H193.51l-21.75-21.76a6,6,0,0,1,8.48-8.48ZM75.76,116.24a6,6,0,0,0,8.48-8.48L62.49,86H208a6,6,0,0,0,0-12H62.49L84.24,52.24a6,6,0,0,0-8.48-8.48l-32,32a6,6,0,0,0,0,8.48Z" />
+													</svg>
+												</div>
+											</div>
+											<div class="col-lg-5 themed-grid-col" style="color:rgb(0, 0, 139); ">
+												<p>To :</p>
+												<div class="form-control">
+													<label for=""><svg xmlns="http://www.w3.org/2000/svg" width="18"
+															height="18" fill="currentColor" color="rgb(0, 0, 139)"
+															viewBox="0 0 256 256" data-testid="destinationIcon">
+															<path
+																d="M246,216a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12H240A6,6,0,0,1,246,216Zm-23.62-26.22L45.75,140.32A38.14,38.14,0,0,1,18,103.72V48A14,14,0,0,1,36.43,34.71l5.47,1.83a6,6,0,0,1,3.74,3.65l11,30.33L90,80V48a14,14,0,0,1,18.43-13.29l5.47,1.83a6,6,0,0,1,3.63,3.37l22.88,54.53,61.77,17.27A38.09,38.09,0,0,1,230,148.32V184a6,6,0,0,1-7.62,5.78ZM218,148.32a26.07,26.07,0,0,0-19-25l-64.58-18a6,6,0,0,1-3.91-3.46l-23-54.7-2.89-1A2,2,0,0,0,102,48V88a6,6,0,0,1-7.64,5.77l-44-12.54a6,6,0,0,1-4-3.73L35.34,47l-2.71-.9A1.91,1.91,0,0,0,32,46a2,2,0,0,0-1.16.38A2,2,0,0,0,30,48v55.72a26.09,26.09,0,0,0,19,25l169,47.33Z">
+														</svg>
+													</label>
+													<input type="text" id="return-input-to-two" placeholder="To"
+														class="form-control text-primary"
+														style="color:rgb(0, 0, 139); border: none;">
+												</div>
+											</div>
+
+											<div class="col-12 themed-grid-col px-3">
+												<p class="px-2 py-1" style="color:rgb(0, 0, 139);">Departure</p>
+												<input type="date" class="form-control py-2"
+													id="return-input-departure-two" placeholder=""
+													style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;"
+													>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-12 px-3 row">
+									<div class="col-lg-6 themed-grid-col row py-2">
+
+										<div class="col-6 themed-grid-col px-0">
+											<p class="px-2 py-1" style="color:rgb(0, 0, 139);">Departure</p>
+											<input type="date" class="form-control py-2" id="departure" placeholder=""
+												style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;"
+												required>
+										</div>
+										<div class="col-6 themed-grid-col px-0" style="padding-right: -10px;">
+											<p class="py-1" style="color:rgb(0, 0, 139);">Return</p>
+											<input type="date" class="form-control py-2" id="returns" placeholder=""
+												style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;"
+												required>
+										</div>
+									</div>
+									<div class="col-lg-6 themed-grid-col row px-5 py-2">
+										<div class="col-lg-6 themed-grid-col px-0">
+											<p class="px-2 py-1" style="color:rgb(0, 0, 139);">Passengers</p>
+											<select name="" id="passengers" class="form-select py-2"
+												style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;">
+												<option value="1 Adult">1 Adult</option>
+												<option value="2 Adults">2 Adults</option>
+												<option value="3 Or More Adults">3 Or More Adults</option>
+												<option value="Children">Children</option>
+											</select>
+										</div>
+										<div class="col-lg-6 themed-grid-col px-0" style="padding-right: 20px;">
+											<p class="py-1" style="color:rgb(0, 0, 139);">Class</p>
+											<select name="" id="classes" class="form-select py-2"
+												style="color:rgb(0, 0, 139); border: 0.5px solid rgb(192, 191, 191); border-radius: 0; margin: 0;">
+												<option value="Economy">Economy</option>
+												<option value="Trip 1">Trip</option>
+												<option value="Trip 2">Trip 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 themed-grid-col" style="padding-top: 20px;">
+								<p style="padding-top: 50px;">
+									<button class="btn h5 text-white px-5 py-2" type="submit" width="300px"
+										style="background-color:rgb(0, 0, 139);">Search Flights</button>
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</form>
+			</div>
+			</div>
+		</section>
+
+		<section class="">
+			<div class="container py-2 pt-3 form bg-white px-5">
+				<div class="row">
+					<div class="col-lg-3 grid-col py-2">
+						<h5 class="wordheader">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256" data-testid="coin-icon">
+								<path
+									d="M240,132c0,19.88-35.82,36-80,36-19.6,0-37.56-3.17-51.47-8.44h0C146.76,156.85,176,142,176,124V96.72h0C212.52,100.06,240,114.58,240,132ZM176,84c0-19.88-35.82-36-80-36S16,64.12,16,84s35.82,36,80,36S176,103.88,176,84Z"
+									opacity="0.2" />
+								<path
+									d="M184,89.57V84c0-25.08-37.83-44-88-44S8,58.92,8,84v40c0,20.89,26.25,37.49,64,42.46V172c0,25.08,37.83,44,88,44s88-18.92,88-44V132C248,111.3,222.58,94.68,184,89.57ZM232,132c0,13.22-30.79,28-72,28-3.73,0-7.43-.13-11.08-.37C170.49,151.77,184,139,184,124V105.74C213.87,110.19,232,122.27,232,132ZM72,150.25V126.46A183.74,183.74,0,0,0,96,128a183.74,183.74,0,0,0,24-1.54v23.79A163,163,0,0,1,96,152,163,163,0,0,1,72,150.25Zm96-40.32V124c0,8.39-12.41,17.4-32,22.87V123.5C148.91,120.37,159.84,115.71,168,109.93ZM96,56c41.21,0,72,14.78,72,28s-30.79,28-72,28S24,97.22,24,84,54.79,56,96,56ZM24,124V109.93c8.16,5.78,19.09,10.44,32,13.57v23.37C36.41,141.4,24,132.39,24,124Zm64,48v-4.17c2.63.1,5.29.17,8,.17,3.88,0,7.67-.13,11.39-.35A121.92,121.92,0,0,0,120,171.41v23.46C100.41,189.4,88,180.39,88,172Zm48,26.25V174.4a179.48,179.48,0,0,0,24,1.6,183.74,183.74,0,0,0,24-1.54v23.79a165.45,165.45,0,0,1-48,0Zm64-3.38V171.5c12.91-3.13,23.84-7.79,32-13.57V172C232,180.39,219.59,189.4,200,194.87Z" />
+							</svg>
+							Wide selection
+						</h5>
+					</div>
+					<div class="col-lg-5 grid-col py-2">
+						<h5 class="wordheader">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256" data-testid="handshake-icon">
+								<path
+									d="M200,152l-40,40L96,176,40,136,72,72l56-16,56,16H144L98.34,116.29a8,8,0,0,0,1.38,12.42C117.23,139.9,141,139.13,160,120Z"
+									opacity="0.2" />
+								<path
+									d="M119.76,217.94A8,8,0,0,1,112,224a8.13,8.13,0,0,1-2-.24l-32-8a8,8,0,0,1-2.5-1.11l-24-16a8,8,0,1,1,8.88-13.31l22.84,15.23,30.66,7.67A8,8,0,0,1,119.76,217.94Zm132.69-96.46a15.89,15.89,0,0,1-8,9.25l-23.68,11.84-55.08,55.09a8,8,0,0,1-7.6,2.1l-64-16a8.06,8.06,0,0,1-2.71-1.25L35.86,142.87,11.58,130.73a16,16,0,0,1-7.16-21.46L29.27,59.58h0a16,16,0,0,1,21.46-7.16l22.06,11,53-15.14a8,8,0,0,1,4.4,0l53,15.14,22.06-11a16,16,0,0,1,21.46,7.16l24.85,49.69A15.9,15.9,0,0,1,252.45,121.48Zm-46.18,12.94L179.06,80H147.24L104,122c12.66,8.09,32.51,10.32,50.32-7.63a8,8,0,0,1,10.68-.61l34.41,27.57Zm-187.54-18,17.69,8.85L61.27,75.58,43.58,66.73ZM188,152.66l-27.71-22.19c-19.54,16-44.35,18.11-64.91,5a16,16,0,0,1-2.72-24.82.6.6,0,0,1,.08-.08L137.6,67.06,128,64.32,77.58,78.73,50.21,133.46l49.2,35.15,58.14,14.53Zm49.24-36.24L212.42,66.73l-17.69,8.85,24.85,49.69Z" />
+							</svg>
+							Trusted by 30M passengers a year
+
+						</h5>
+					</div>
+					<div class="col-lg-4 grid-col py-2">
+						<h5 class="wordheader">
+							<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256" data-testid="globe-icon">
+								<path
+									d="M213.09,172.48a96,96,0,0,1-80.41,51.41l3.17-16.44a8,8,0,0,0-2-6.95l-19.74-20.33a8,8,0,0,1-1.44-8.69l13.7-30.74a8,8,0,0,1,8.38-4.67l22.82,3.08a8.11,8.11,0,0,1,3.12,1.11ZM116.71,95,129,88.24a7.46,7.46,0,0,0,1.5-1.07l26.91-24.33A8,8,0,0,0,159,53l-10.5-18.81A96.62,96.62,0,0,0,128,32,95.61,95.61,0,0,0,67.78,53.23L56,81.08A8,8,0,0,0,55.88,87l11.5,30.67a8,8,0,0,0,5.81,5l2.69.58L89.2,100a8,8,0,0,1,6.94-4h16.71A7.9,7.9,0,0,0,116.71,95Z"
+									opacity="0.2" />
+								<path
+									d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.62,87.62,0,0,1-6.4,32.94l-44.7-27.49a15.92,15.92,0,0,0-6.24-2.23l-22.82-3.08a16.11,16.11,0,0,0-16,7.86h-8.72l-3.8-7.86a15.91,15.91,0,0,0-11-8.67l-8-1.73L96.14,104h16.71a16.06,16.06,0,0,0,7.73-2l12.25-6.76a16.62,16.62,0,0,0,3-2.14l26.91-24.34A15.93,15.93,0,0,0,166,49.1l-.36-.65A88.11,88.11,0,0,1,216,128ZM143.31,41.34,152,56.9,125.09,81.24,112.85,88H96.14a16,16,0,0,0-13.88,8l-8.73,15.23L63.38,84.19,74.32,58.32a87.87,87.87,0,0,1,69-17ZM40,128a87.53,87.53,0,0,1,8.54-37.8l11.34,30.27a16,16,0,0,0,11.62,10l21.43,4.61L96.74,143a16.09,16.09,0,0,0,14.4,9h1.48l-7.23,16.23a16,16,0,0,0,2.86,17.37l.14.14L128,205.94l-1.94,10A88.11,88.11,0,0,1,40,128Zm102.58,86.78,1.13-5.81a16.09,16.09,0,0,0-4-13.9,1.85,1.85,0,0,1-.14-.14L120,174.74,133.7,144l22.82,3.08,45.72,28.12A88.18,88.18,0,0,1,142.58,214.78Z" />
+							</svg>
+							Over 20 years of experience
+						</h5>
+					</div>
+				</div>
+
+			</div>
+
+
+		</section>
+		 <section class="sigble3">
+			<div class="container py-3 sigble3">
+				<div class="row">
+					<div class="col-lg-4 themed-grid-col">
+						<h5 class="wordheader">Flexibility at ease</h5>
+						<p>
+							Now you have all you need for your seamless flight. With a variety of services such as
+							Flexible
+							Ticket, Cancellation Guarantee and many more to make your perfect trip happen.
+
+						</p>
+						<p>
+							<a href="" style="color:rgb(0, 0, 139)">Learn more about our services</a>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256">
+								<path
+									d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z" />
+							</svg>
+						</p>
+					</div>
+					<div class="col-lg-4 themed-grid-col">
+						<h5 class="wordheader">Stay in the loop</h5>
+						<p>
+							Log in to My Bookings with your email and order number to view your check-in options and
+							additional services. Plus, track your refund status in real-time.
+						</p>
+
+						<p>
+							<a href="" style="color:rgb(0, 0, 139)">Log In to My Bookings</a>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256">
+								<path
+									d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z" />
+							</svg>
+						</p>
+					</div>
+					<div class="col-lg-4 themed-grid-col mr-0">
+						<h5 class="wordheader">
+							Your world, one app
+						</h5>
+						<p>
+							Book your next flight on-the-go with the Flight Network app! Store your booking details,
+							check
+							in quickly, and enjoy exclusive offers. It's travel made easy. Fly smart and enjoy more with
+							the
+							app.
+						</p>
+						<p>
+							<a href="" style="color:rgb(0, 0, 139)">Get it here for free</a>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="rgb(0, 0, 139)"
+								fill="currentColor" viewBox="0 0 256 256">
+								<path
+									d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z" />
+							</svg>
+					</div>
+					</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="somelink">
+			<div class="row text-white mx-4 py-5">
+				<div class="col-lg-3 d-grid-col">
+					<h5>Flights</h5>
+					<p>
+						<a href="" class="text-white">Cheap flights from London to Istanbul</a><br>
+						<a href="" class="text-white">Cheap flights from London to Lisbon</a><br>
+						<a href="" class="text-white">Cheap flights from London to Bangkok</a><br>
+						<a href="" class="text-white">Cheap flights from London to Phuket</a><br>
+						<a href="" class="text-white">Cheap flights from London to Malta</a><br>
+						<a href="" class="text-white">Cheap flights from London to Cairo</a><br>
+						<a href="" class="text-white">Cheap flights from London to Athens</a><br>
+					</p>
+				</div>
+
+				<div class="col-lg-3 d-grid-col">
+					<h5>About us</h5>
+					<p>
+						<a href="" class="text-white">About us</a><br>
+						<a href="" class="text-white">Terms and Conditions</a><br>
+						<a href="" class="text-white">Privacy Policy</a><br>
+						<a href="" class="text-white">Information on cookies</a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 d-grid-col">
+					<h5>Support</h5>
+					<p>
+						<a href="" class="text-white">Contact us</a><br>
+						<a href="" class="text-white">FAQ</a><br>
+						<a href="" class="text-white">Airline Information</a><br>
+						<a href="" class="text-white">My Bookings</a><br>
+						<a href="" class="text-white">Cancellation protection</a>
+					</p>
+
+				</div>
+				<div class="col-lg-3 d-grid-col">
+					<h5>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" color="white" fill="currentColor"
+							viewBox="0 0 256 256">
+							<path
+								d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z" />
+						</svg>
+						Log in
+					</h5>
+					<p><button class="btn text-white mx-2" onclick="myBooking()">
+							My Bookings
+						</button>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="somelink text-white mb-0 py-3 " style="text-align: center;">
+			<p class="px-3">Flight Network / Flight Network UK Ltd, Unit 112854, PO Box 6945, London, W1A 6US, United
+				Kingdom</p>
+
+			<p class="px-1">
+				© 2024 Flight Network. All Rights Reserved.
+			</p>
+		</section>
+
+	</section>
+	<script>
+
+	</script>
+	<script src="script.js"></script>
+	<script src="bootstrap.bundle.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script> -->
+</body>
+
+</html>
